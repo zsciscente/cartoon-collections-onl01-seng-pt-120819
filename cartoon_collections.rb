@@ -15,9 +15,10 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(calls_long)
-   calls_long.any? {|i| i.length > 4}
-   
-   calls_long.all? {|j| j.length > 4}
+   if calls_long.any? {|i| i.length > 4}
+ else
+   false
+ end
   
 end
 
